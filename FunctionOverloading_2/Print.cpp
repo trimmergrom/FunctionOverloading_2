@@ -6,16 +6,33 @@ void Print(int arr[], const unsigned int n)
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << "\t";
+	}	
+}
+void Print(char arr[], const unsigned int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << "\t";
 	}
-	
+	cout << endl;
+	for (int i = 0; i < n; i++)
+	{
+		cout << (int)arr[i] << "\t";
+	}
 }
 void Print(double arr[], const unsigned int n)
 {
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << "\t";
+	}	
+}
+void Print(float arr[], const unsigned int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << "\t";
 	}
-	cout << "\t Sourse Array" << endl << endl;
 }
 void Print(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
@@ -23,7 +40,7 @@ void Print(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS
 	{
 		for (int j = 0; j < COLS; j++)
 		{
-			cout << arr[i][j] << " ";
+			cout << arr[i][j] << "\t";
 		}
 		cout << endl;
 	}

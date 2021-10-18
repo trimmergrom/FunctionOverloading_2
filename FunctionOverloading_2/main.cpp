@@ -18,10 +18,10 @@ int main()
 	double arr_DB[n];
 	float arr_FL[n];
 	int arr_2[ROWS][COLS];
-	//char arr_2CH[ROWS][COLS];
-	//double arr_2DB[ROWS][COLS];
-	//float arr_2FL[ROWS][COLS];
-	srand(3);
+	char arr_2CH[ROWS][COLS];
+	double arr_2DB[ROWS][COLS];
+	float arr_2FL[ROWS][COLS];
+	srand(5);
 	cout << "Enter minRand\t"; cin >> minRand;
 	cout << "Enter maxRand\t"; cin >> maxRand; cout << endl;
 
@@ -38,7 +38,16 @@ int main()
 	Print(arr_FL, n); cout << "\t Parent FLOAT Array" << endl << endl;
 
 	ArrRand(arr_2, ROWS, COLS);
-	Print(arr_2, ROWS, COLS); cout << "\t\t\t\t\t\t\t\t\t\t\t\t\t Parent INT 2 Array" << endl << endl;
+	Print(arr_2, ROWS, COLS); cout << "==========================================================================\t\t\t\t Parent INT 2 Array" << endl << endl;
+
+	ArrRand(arr_2CH, ROWS, COLS);
+	Print(arr_2CH, ROWS, COLS); cout << "==========================================================================\t\t\t\t Parent CHAR 2 Array" << endl << endl;
+
+	ArrRand(arr_2DB, ROWS, COLS, minRand, maxRand);
+	Print(arr_2DB, ROWS, COLS); cout << "==========================================================================\t\t\t\t Parent DOUBLE Array" << endl << endl;
+
+	ArrRand(arr_2FL, ROWS, COLS, minRand, maxRand);
+	Print(arr_2FL, ROWS, COLS); cout << "==========================================================================\t\t\t\t Parent FLOAT Array" << endl << endl;
 
 	ReversPrint(arr, n);
 

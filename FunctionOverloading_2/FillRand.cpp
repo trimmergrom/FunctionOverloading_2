@@ -43,7 +43,49 @@ void ArrRand(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int CO
 	{
 		for (int j = 0; j < COLS; j++)
 		{
-			arr[i][j] = rand() % 1000;
+			arr[i][j] = rand() % 100;
+		}
+	}
+}
+void ArrRand(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
+{
+	{
+		for (int i = 0; i < ROWS; i++)
+		{
+			for (int j = 0; j < COLS; j++)
+			{
+				arr[i][j] = rand() % 256;
+			}
+		}
+	}
+}
+void ArrRand(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int minRand, int maxRand)
+{
+	{
+		minRand *= 100;
+		maxRand *= 100;
+		for (int i = 0; i < ROWS; i++)
+		{
+			for (int j = 0; j < COLS; j++)
+			{
+				arr[i][j] = rand() % (maxRand - minRand) + minRand;
+				arr[i][j] /= 100;
+			}
+		}
+	}
+}
+void ArrRand(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int minRand, int maxRand)
+{
+	{
+		minRand *= 100;
+		maxRand *= 100;
+		for (int i = 0; i < ROWS; i++)
+		{
+			for (int j = 0; j < COLS; j++)
+			{
+				arr[i][j] = rand() % (maxRand - minRand) + minRand;
+				arr[i][j] /= 100;
+			}
 		}
 	}
 }

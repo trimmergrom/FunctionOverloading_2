@@ -45,6 +45,40 @@ void Print(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS
 		cout << endl;
 	}
 }
+void Print(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
+{
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			cout << arr[i][j] << " " << (int)arr[i][j] << "\t\t";
+		}
+		cout << endl;
+	}
+}
+void Print(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
+{
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			cout << arr[i][j]  << "\t\t";
+		}
+		cout << endl;
+	}
+}
+void Print(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
+{
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			cout << arr[i][j] << "\t\t";
+		}
+		cout << endl;
+	}
+}
+
 void ReversPrint(int arr[], const unsigned n)
 {
 	for (int i = n - 1; i >= 0; i--)

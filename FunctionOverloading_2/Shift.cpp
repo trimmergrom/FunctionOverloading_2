@@ -1,61 +1,8 @@
-#include "Function.h"
+#include "Shift.h"
 #include "stdafx.h"
 #include "Constants.h"
 
-
-int Summ(int arr[], const unsigned int n)
-{
-	int summ = 0;
-	for (int i = 0; i < n; i++)
-	{
-		summ += arr[i];
-	}
-	return summ;
-}
-double Avg(int summ, const unsigned int n)
-{
-	return  (double)summ / n;
-}
-int MaxValue(int arr[], const unsigned int n)
-{
-	int max = arr[0];
-	for (int i = 1; i < n; i++)
-	{
-		if (max < arr[i]) { max = arr[i]; }
-	}
-	return max;
-}
-int MinValue(int arr[], const unsigned int n)
-{
-	int min = arr[0];
-	for (int i = 1; i < n; i++)
-	{
-		if (min > arr[i]) { min = arr[i]; }
-	}
-	return min;
-}
-void SortArr(int arr[], const unsigned int n)
-{
-	int j = 0;
-	int tmp = 0;
-	for (int i = 0; i < n; i++)
-	{
-		j = i;
-		for (int k = i; k < n; k++)
-		{
-			if (arr[j] > arr[k]) { j = k; }
-		}
-		tmp = arr[i];
-		arr[i] = arr[j];
-		arr[j] = tmp;
-	}
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << "\t";
-	}
-	cout << "The array is sorted in ascending order" << endl << endl;
-}
-void ShiftManager(int arr[], int arr_1[], const unsigned int n)
+/*void ShiftManager(int arr[], int arr_1[], const unsigned int n)
 {
 	int shift;
 	char e;
@@ -109,4 +56,4 @@ void Shift_Left(int arr[], int arr_1[], const unsigned int n, int shift)
 	{
 		cout << arr_1[i] << "\t";
 	}
-}
+}*/

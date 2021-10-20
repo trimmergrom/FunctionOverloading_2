@@ -10,21 +10,23 @@ void ArrRand(int arr[], int arr_1[], const unsigned int n, int minRand, int maxR
 		arr_1[i] = arr[i];
 	}
 }
-void ArrRand(char arr[], const unsigned int n)
+void ArrRand(int arr[], int arr_1[], const unsigned int n)
 {
 	for (int i = 0; i < n; i++)
 	{
-		arr[i] = rand() % 256;		
+		arr[i] = rand() % 256;
+		arr_1[i] = arr[i];
 	}
 }
-void ArrRand(double arr[], const unsigned int n, int minRand, int maxRand)
+void ArrRand(double arr[], double arr1_DB[], const unsigned int n, int minRand, int maxRand)
 {
 	minRand *= 100;
 	maxRand *= 100;
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % (maxRand - minRand) + minRand;
-		arr[i] /= 100;		
+		arr[i] /= 100;
+		arr1_DB[i] = arr[i];
 	}
 }
 void ArrRand(float arr[], const unsigned int n, int minRand, int maxRand)

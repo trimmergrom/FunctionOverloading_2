@@ -238,7 +238,7 @@ void Shift_Left(int arr[ROWS][COLS], int arr_1[ROWS][COLS], const unsigned int R
 		}
 		cout << endl;
 	}
-	cout << PP " The INT 2D Array is shifted to the LEFT by " << abs(shift) << " elements\n" << endl;
+	cout << PP " The INT 2D Array is shifted to the LEFT by " << shift << " elements\n" << endl;
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -316,7 +316,7 @@ void Shift_Left(double arr[ROWS][COLS], double arr_1[ROWS][COLS], const unsigned
 		}
 		cout << endl;
 	}
-	cout << PP " The DOUBLE 2D Array is shifted to the LEFT by " << abs(shift) << " elements\n" << endl;
+	cout << PP " The DOUBLE 2D Array is shifted to the LEFT by " << shift << " elements\n" << endl;
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -394,7 +394,7 @@ void Shift_Left(float arr[ROWS][COLS], float arr_1[ROWS][COLS], const unsigned i
 		}
 		cout << endl;
 	}
-	cout << PP " The FLOAT 2D Array is shifted to the LEFT by " << abs(shift) << " elements\n" << endl;
+	cout << PP " The FLOAT 2D Array is shifted to the LEFT by " << shift << " elements\n" << endl;
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)

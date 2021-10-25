@@ -18,7 +18,7 @@ void ArrRand(int arr[], int arr_1[], const unsigned int n)
 		arr_1[i] = arr[i];
 	}
 }
-void ArrRand(double arr[], double arr1_DB[], const unsigned int n, int minRand, int maxRand)
+void ArrRand(double arr[], double arr_1[], const unsigned int n, int minRand, int maxRand)
 {
 	minRand *= 100;
 	maxRand *= 100;
@@ -26,10 +26,10 @@ void ArrRand(double arr[], double arr1_DB[], const unsigned int n, int minRand, 
 	{
 		arr[i] = rand() % (maxRand - minRand) + minRand;
 		arr[i] /= 100;
-		arr1_DB[i] = arr[i];
+		arr_1[i] = arr[i];
 	}
 }
-void ArrRand(float arr[], const unsigned int n, int minRand, int maxRand)
+void ArrRand(float arr[], float arr_1[], const unsigned int n, int minRand, int maxRand)
 {
 	minRand *= 100;
 	maxRand *= 100;
@@ -37,19 +37,21 @@ void ArrRand(float arr[], const unsigned int n, int minRand, int maxRand)
 	{
 		arr[i] = rand() % (maxRand - minRand) + minRand;
 		arr[i] /= 100;
+		arr_1[i] = arr[i];
 	}
 }
-void ArrRand(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
+void ArrRand(int arr[ROWS][COLS], int arr_1[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
 		{
 			arr[i][j] = rand() % 100;
+			arr_1[i][j] = arr[i][j];
 		}
 	}
 }
-void ArrRand(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
+void ArrRand(char arr[ROWS][COLS], char arr_1[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS)
 {
 	{
 		for (int i = 0; i < ROWS; i++)
@@ -57,11 +59,12 @@ void ArrRand(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int C
 			for (int j = 0; j < COLS; j++)
 			{
 				arr[i][j] = rand() % 256;
+				arr_1[i][j] = arr[i][j];
 			}
 		}
 	}
 }
-void ArrRand(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int minRand, int maxRand)
+void ArrRand(double arr[ROWS][COLS], double arr_1[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int minRand, int maxRand)
 {
 	{
 		minRand *= 100;
@@ -72,11 +75,12 @@ void ArrRand(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int
 			{
 				arr[i][j] = rand() % (maxRand - minRand) + minRand;
 				arr[i][j] /= 100;
+				arr_1[i][j] = arr[i][j];
 			}
 		}
 	}
 }
-void ArrRand(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int minRand, int maxRand)
+void ArrRand(float arr[ROWS][COLS], float arr_1[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS, int minRand, int maxRand)
 {
 	{
 		minRand *= 100;
@@ -87,6 +91,7 @@ void ArrRand(float arr[ROWS][COLS], const unsigned int ROWS, const unsigned int 
 			{
 				arr[i][j] = rand() % (maxRand - minRand) + minRand;
 				arr[i][j] /= 100;
+				arr_1[i][j] = arr[i][j];
 			}
 		}
 	}

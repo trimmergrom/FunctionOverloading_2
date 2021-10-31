@@ -10,14 +10,6 @@ void ArrRand(int arr[], int arr_1[], const unsigned int n, int minRand, int maxR
 		arr_1[i] = arr[i];
 	}
 }
-void ArrRand(int arr[], int arr_1[], const unsigned int n)
-{
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand() % 256;
-		arr_1[i] = arr[i];
-	}
-}
 void ArrRand(double arr[], double arr_1[], const unsigned int n, int minRand, int maxRand)
 {
 	minRand *= 100;

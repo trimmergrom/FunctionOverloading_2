@@ -1,10 +1,11 @@
 #pragma once
 #include "Constants.h"
 
-void Print(int arr[], const unsigned int n);
-void Print1(int arr[], const unsigned int n);
-void Print(double arr[], const unsigned int n);
-void Print(float arr[], const unsigned int n);
+template<typename T> void Print(T arr[], const unsigned int n);
+
+//void Print(double arr[], const unsigned int n);
+
+//void Print(float arr[], const unsigned int n);
 void Print(int arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
 void Print(char arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);
 void Print(double arr[ROWS][COLS], const unsigned int ROWS, const unsigned int COLS);

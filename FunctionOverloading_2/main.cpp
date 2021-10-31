@@ -16,8 +16,7 @@ int main()
 
 	const unsigned int n = 12;
 	int minRand, maxRand;
-	int arr[n], arr_1[n];
-	int arr_CH[n], arr1_CH[n];
+	int arr[n], arr_1[n];	
 	double arr_DB[n], arr1_DB[n];
 	float arr_FL[n], arr1_FL[n];
 	int arr_2[ROWS][COLS], arr1_2[ROWS][COLS];
@@ -29,7 +28,8 @@ int main()
 	cout << "Enter maxRand\t"; cin >> maxRand; cout << endl;
 
 	ArrRand(arr, arr_1, n, minRand, maxRand);
-	Print(arr, n); cout <<  "\t Parent INTGER Array" << endl << endl;
+	Print(arr, n);
+	cout <<  "\t Parent INTGER Array" << endl << endl;
 	ReversPrint(arr, n); cout << "\t Revers INTGER Array" << endl << endl;
 	SortArr(arr, n); cout << "\t The INTGER Array is sorted in ascending order" << endl << endl;
 	cout << Summ(arr, n) << PPP " Summa INTGER Array" << endl << endl;
@@ -39,13 +39,12 @@ int main()
 	ShiftManager(arr, arr_1, n);
 	cout <<  "=========================================================================================================================="  << endl;
 
-	ArrRand(arr_CH, arr1_CH, n);
-	Print1(arr_CH, n); cout << "\t Parent CHAR Array" << endl << endl;
-	ReversPrint1(arr_CH, n); cout << "\t Revers CHAR Array" << endl;
+	
 	cout <<  "=========================================================================================================================="  << endl;	
 
 	ArrRand(arr_DB, arr1_DB, n, minRand, maxRand);
-	Print(arr_DB, n); cout << "\t Parent DOUBLE Array" << endl << endl;
+	Print(arr_DB, n);
+	cout << "\t Parent DOUBLE Array" << endl << endl;
 	ReversPrint(arr_DB, n); cout << "\t Revers DOUBLE Array" << endl << endl;
 	SortArr(arr_DB, n); cout << "\t The DOUBLE Array is sorted in ascending order" << endl << endl;
 	cout << Summ(arr_DB, n) << PPP " Summa DOUBLE Array" << endl << endl;
@@ -56,7 +55,8 @@ int main()
 	cout <<  "======================================================================= ==================================================="  << endl;
 
 	ArrRand(arr_FL, arr1_FL, n, minRand, maxRand);
-	Print(arr_FL, n); cout << "\t Parent FLOAT Array" << endl << endl;
+	Print(arr_FL, n);
+	cout << "\t Parent FLOAT Array" << endl << endl;
 	ReversPrint(arr_FL, n); cout << "\t Revers FLOAT Array" << endl << endl;
 	SortArr(arr_FL, n); cout << "\t The FLOAT Array is sorted in ascending order" << endl << endl;
 	cout << Summ(arr_FL, n) << PPP " Summa FLOAT Array" << endl << endl;

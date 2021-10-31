@@ -1,6 +1,7 @@
 #include "Constants.h"
 #include "FillRand.h"
 #include "stdafx.h"
+
 void Print(int arr[], const unsigned int n)
 {
 	for (int i = 0; i < n; i++)

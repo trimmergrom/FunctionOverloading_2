@@ -1,5 +1,4 @@
 #include "Constants.h"
-#include "FillRand.h"
 #include "stdafx.h"
 
 int Summ(int arr[], const unsigned int n)
